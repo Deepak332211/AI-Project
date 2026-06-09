@@ -1,0 +1,42 @@
+# IDE and Build Artifacts
+.idea/
+.vscode/
+.DS_Store
+*.class
+*.jar
+*.log
+
+# Maven
+target/
+.classpath
+.project
+.settings/
+*.classpath
+*.prefs
+
+# Test Reports
+test-output/
+surefire-reports/
+reports/
+logs/
+
+# Gradle (if applicable)
+.gradle/
+build/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Temporary Files
+*.tmp
+*.swp
+*.swo
+*~
+
+# Environment
+.env
+local.properties
+
+# Dependencies
+*.lock
