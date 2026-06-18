@@ -41,9 +41,6 @@ export default function JobModal({ isOpen, initialJob, defaultStatus, onClose, o
             <h2 className="text-lg font-semibold text-slate-950 dark:text-white">
               {initialJob ? 'Edit job' : 'Add job'}
             </h2>
-            <p className="text-sm text-slate-500 dark:text-slate-400">
-              Changes save to IndexedDB immediately after submit.
-            </p>
           </div>
           <button
             type="button"
@@ -89,7 +86,7 @@ export default function JobModal({ isOpen, initialJob, defaultStatus, onClose, o
             />
           </Field>
 
-          <Field label="Applied Date">
+          <Field label="Applied Date" error={errors.appliedDate}>
             <input
               type="date"
               value={form.appliedDate}

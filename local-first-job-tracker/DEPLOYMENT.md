@@ -28,6 +28,7 @@ If this folder already lives inside another Git repository, either push the pare
 
 ```text
 Framework Preset: Vite
+Root Directory: local-first-job-tracker
 Build Command: npm run build
 Output Directory: dist
 Install Command: npm install

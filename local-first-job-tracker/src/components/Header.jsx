@@ -16,9 +16,6 @@ export default function Header({
           <h1 className="text-2xl font-semibold tracking-normal text-slate-950 dark:text-white">
             Job Tracker
           </h1>
-          <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
-            Local-first Kanban for private, offline-friendly job search tracking.
-          </p>
         </div>
 
         <div className="flex flex-col gap-3 md:flex-row md:items-center">

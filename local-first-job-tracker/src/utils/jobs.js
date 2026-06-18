@@ -50,9 +50,18 @@ export const validateJob = (job) => {
       const url = new URL(job.linkedinUrl);
       if (!['http:', 'https:'].includes(url.protocol)) {
         errors.linkedinUrl = 'Use a valid http or https URL.';
+      } else if (!url.hostname.toLowerCase().includes('linkedin.')) {
+        errors.linkedinUrl = 'Use a LinkedIn job URL.';
       }
     } catch {
       errors.linkedinUrl = 'Use a valid LinkedIn URL.';
+    }
+  }
+
+  if (job.appliedDate) {
+    const parsedDate = new Date(`${job.appliedDate}T00:00:00`);
+    if (Number.isNaN(parsedDate.getTime())) {
+      errors.appliedDate = 'Use a valid applied date.';
     }
   }
 
