@@ -1,7 +1,0 @@
-firstName,lastName,totalPrice,depositPaid,checkIn,checkOut,additionalNeeds
-John,Doe,100,true,2024-12-15,2024-12-20,WiFi needed
-Jane,Smith,150,false,2024-12-20,2024-12-25,Late checkout
-Bob,Johnson,200,true,2024-12-10,2024-12-15,Extra bed required
-Alice,Brown,250,false,2024-12-25,2024-12-30,Breakfast included
-Charlie,Davis,300,true,2024-01-10,2024-01-15,Airport pickup
-Emma,Wilson,175,true,2024-01-20,2024-01-25,Crib needed
